@@ -10,7 +10,7 @@ step 3: import the database named "users.sql"
 
 step 4: open the folder admin and import the database named "admin_db.sql"
 
-step 4: run and use the system
+step 5: run and use the system
 
 NB: Another tutorial website had a lot of books, but I had to delete the book because the file was too large. However, you can download and use it by clicking the link below to get it.
 - Grade 7th - 12th Student Text Book Link : 
