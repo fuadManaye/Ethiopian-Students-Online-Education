@@ -12,7 +12,5 @@ step 4: open the folder admin and import the database named "admin_db.sql"
 
 step 5: run and use the system
 
-NB: Another tutorial website had a lot of books, but I had to delete the book because the file was too large. However, you can download and use it by clicking the link below to get it.
-- Grade 7th - 12th Student Text Book Link : 
 - if you have any question you can contact me with my email address : fuye460@gmail.com or fuadmanaye15@gmail.com
 
