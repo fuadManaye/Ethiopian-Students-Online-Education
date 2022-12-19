@@ -1,0 +1,92 @@
+*{
+  font-size: 1rem;
+  margin:0;
+  padding:0;
+}
+ul{
+  font-style: normal;
+  list-style: none;
+}
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('./img/watchBg.jpg');
+  background-position: center;
+  background-size: cover; 
+  font-family:Lobster;
+}
+p{
+  font-family: Quicksand,sans-serif;
+  letter-spacing: 1.5px;
+}
+h2{
+  letter-spacing: 2.5px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family:Lobster;
+  margin-top: 20px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+}
+.logo img{
+  float: left;
+  width:50px;
+  height:35px;
+}
+.videos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  margin-top:50px;
+  margin-left:20px;
+}
+.videos img{
+  width:65%;
+  height:110px;
+  border:1px solid darkgray;
+  border-radius: 25px;
+}
+.watch{
+  width:20%;
+  padding:10px;
+}
+.watch:hover{
+  transform: translateY(-10px);
+  transition:transform 0.5s;
+}
+.text-center{
+  text-align: center;
+}
+.sty{
+  word-spacing: 25px;
+}
+.links h1{
+  border:1px solid rgb(141, 127, 127);
+  border-radius: 5px;
+  background-color: rgba(172, 161, 161, 0.2);
+  transition: 0.9s ease;
+}
+.links{
+  margin-top: 250px;
+  color:darkmagenta;
+}
+.links h1{
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 25px;
+}
+.links:hover{
+  color: rgb(212, 100, 100);
+}
+@media(max-width:580px) {
+  .watch{
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+@media(max-width:1132px) {
+  .watch{
+    width: 50%;
+  }
+}

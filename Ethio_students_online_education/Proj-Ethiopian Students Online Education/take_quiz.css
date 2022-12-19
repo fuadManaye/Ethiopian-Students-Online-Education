@@ -1,0 +1,104 @@
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-family: montserrat;
+}
+.backg{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('./img/Qimg.png');
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	height: 40px;
+	width: 100%;
+	background-color:rgba(0,0,0,0.4);
+	position: fixed;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav li{
+	display: inline-block;
+	margin:0 4px;
+	line-height: 40px;
+}
+nav a{
+	color:white;
+	font-size:9px;
+	text-transform: uppercase;
+	border:1px solid transparent;
+	padding:2px 6px;
+	border-radius: 3px;
+}
+nav ul li a{
+	text-decoration: none;
+	color:rgb(102, 214, 214);
+	padding: 5px,10px;
+	border:1px solid transparent;
+	transition: 0.6s ease;
+	font-weight: bold;
+	font-style: oblique;
+}
+nav ul li a:hover{
+	background-color: rgb(189, 163, 163); 
+	color:#000;
+}
+.title{
+	position:absolute;
+	top:28%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.title{
+	font-size:15px;
+}
+.title h1 {
+	position: relative;
+	color:rgb(240, 236, 4);
+	display: inline-block;
+	font-family:lobster;
+}
+.button a{
+	display: block;
+    margin:25px 0;
+    line-height: 10px;
+}
+.button{
+	display: inline;
+	position:absolute;
+	top:55%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.btn{
+	border:1px solid #fff;
+	border-radius: 5px;
+	padding:5px 15px;
+	color:#fff;
+	text-decoration:none;
+	transition: 0.6s ease;
+	font-size:13px;
+	font-family:lobster;
+}
+.btn:hover{
+	background-color:#fff;
+	color:#000;
+} 
+
+@media (max-width:909px) {
+	.btn{
+		font-size: 10px;
+	}
+	.button{
+		margin-top: 40px;
+	}
+	.title{
+		font-size:10px;
+	}
+}

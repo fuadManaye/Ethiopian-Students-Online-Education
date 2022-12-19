@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geography Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Geography.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="Geography.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="Geography">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_12.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Geography Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+          <form class="questionform" id="q1" data-question="1">
+            <h3>1.____ Are qualitative maps that use pictures and letters. The pictures often symbolized are pictures of the real element.</h3>
+            <ul>
+              <li><input name="q1" type="radio" value="a">A.Chorochromatic maps</li>
+              <li><input name="q1" type="radio" value="b">B.Choroschematic maps</li>
+              <li><input name="q1" type="radio" value="c">C.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q2" data-question="2">
+            <h3>2._______ is expressed as a geographical extent, in terms of latitudes and longitudes.</h3>
+            <ul>
+              <li><input name="q2" type="radio" value="a">A.Absolute location</li>
+              <li><input name="q2" type="radio" value="b">B.Relative location</li>
+              <li><input name="q2" type="radio" value="c">C.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q3" data-question="3">
+            <h3>3.____ is also known for the predominance of reptiles.</h3>
+            <ul>
+              <li><input name="q3" type="radio" value="a">A.Cenozoic Era</li>
+              <li><input name="q3" type="radio" value="b">B.Mesozoic Era</li>
+              <li><input name="q3" type="radio" value="c">C.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q4" data-question="4">
+            <h3>4._______ areas have the highest altitudes and lowest temperatures.</h3>
+            <ul>
+              <li><input name="q4" type="radio" value="a">A.Wurch-zone</li>
+              <li><input name="q4" type="radio" value="b">B.Dega-Zone</li>
+              <li><input name="q4" type="radio" value="c">C.Woina-Dega zone</li>
+              <li><input name="q4" type="radio" value="d">D.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q5" data-question="5">
+            <h3>5.______ areas are highland areas with lower altitudes and higher temperatures than Wurch-zone areas.</h3>
+            <ul>
+              <li><input name="q5" type="radio" value="a">A.Woina-Dega zone</li>
+              <li><input name="q5" type="radio" value="b">B.Qolla Zone</li>
+              <li><input name="q5" type="radio" value="c">C.Dega-zone</li>
+              <li><input name="q5" type="radio" value="d">D.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 5 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

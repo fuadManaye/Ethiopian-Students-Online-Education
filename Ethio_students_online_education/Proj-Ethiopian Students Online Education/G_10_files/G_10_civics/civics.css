@@ -1,0 +1,249 @@
+/* css for amharic quiz*/
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-family: montserrat;
+}
+.civics{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../10img/Quiz_10Img.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	height: 40px;
+	width: 100%;
+	background-color:rgba(0,0,0,0.4);
+    position: fixed;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav li{
+	display: inline-block;
+	margin:0 2px;
+	line-height: 40px;
+}
+nav a{
+	color:white;
+	font-size:9px;
+	text-transform: uppercase;
+	border:1px solid transparent;
+	padding:2px 5px;
+	border-radius: 3px;
+}
+nav ul li a{
+	text-decoration: none;
+	color:rgb(17, 226, 226);
+	padding: 5px,20px;
+	border:1px solid transparent;
+	transition: 0.6s ease;
+	font-weight: bold;
+	font-style: oblique;
+}
+nav ul li a:hover{
+	background-color: rgb(212, 100, 100); 
+	color:#000;
+}
+.touch{
+	position:absolute;
+	top:10%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.touch{
+	color:rgb(10, 239, 255);
+	font-size:12px;
+	font-weight: bold;
+}
+.touch h1 {
+	text-align: center;
+}
+.touch h2 {
+	position: relative;
+	display: inline-block;
+	font-family:lobster;
+}
+#clock{
+	text-align:center;
+}
+#results a{
+	font-size: 12px;
+    color: #000000;
+    padding: 2px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+	font-family: lobster;
+	transition: 0.9s ease;
+}
+#answers a{
+	font-size: 12px;
+    color: #000000;
+    padding: 2px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+	font-family: lobster;
+	transition: 0.9s ease;
+}
+#answers a:hover{
+	background-color: rgb(187, 53, 93);
+	color:rgb(250, 246, 246);
+}
+#results a:hover{
+	background-color: rgb(187, 53, 93);
+	color:rgb(250, 246, 246);
+}
+@media (max-width:1125px) {
+    .touch{
+        font-size: 12px;
+    }
+    .touch h2{
+		margin-left: auto;
+        font-size: 10px;
+		color:white;
+		font-weight: bold;
+    }
+	.center{
+		font-size: 10px;
+	}
+	.pull-left{
+		font-size: 10px;
+	}
+	.pull-right{
+		font-size: 10px;
+	}
+	h3{
+		font-size: 12px;
+	}
+	ul li{
+		font-size:12px;
+	}
+	.questionform{
+		font-size: 10px;
+	}
+	button{
+		margin-top: -14px;
+		margin-left: 26px;
+	}
+}
+@media (max-width:425px) {
+	#results a{
+		font-size: 10px;
+	}
+	#answers a{
+		font-size: 10px;
+	}
+    .touch{
+		margin-top: 18px;
+        font-size: 10px;
+    }
+    .touch h2{
+		margin-left: auto;
+        font-size: 7px;
+		color:white;
+		font-weight: bold;
+    }
+	.center{
+		font-size: 10px;
+	}
+	.foot{
+		margin-top: 100px;
+	}
+	.pull-left{
+		font-size: 10px;
+	}
+	.pull-right{
+		font-size: 10px;
+	}
+	h3{
+		font-size: 12px;
+	}
+	ul li{
+		font-size:12px;
+	}
+	.questionform{
+		font-size: 10px;
+	}
+	button{
+		margin-top: 80px;
+		margin-left: 26px;
+	}
+}
+.foot{
+	font-size:10px;
+	font-weight: bold;
+}
+.section{
+	width:100%;
+	height:100vh;
+	position: -ms-page;
+}
+.section .container{
+	width:80%;
+	display: block;
+	margin: 0px auto;
+	padding: 25px 0px;
+}
+.container{
+	width:70%;
+	margin:100px auto;
+	overflow: auto;
+}
+.center{
+	text-align: center;
+	font-size:10px;
+	font-weight: bold;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float: right;
+}
+.questionform{
+	margin-top: 5px;
+	font-size: 15px;
+}
+button {
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+button {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000000;
+    padding: 2px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+	font-family: lobster;
+	transition: 0.9s ease;
+}
+.correct:hover{
+	background-color: rgb(187, 53, 93);
+	color:rgb(250, 246, 246);
+}
+header{
+	background: #8b9299;
+	color:#ffffff;
+	margin-top: 100px;
+	padding:5px 10px;
+	overflow: auto;
+	font-size:16px;
+}
+footer{
+	background: #8b9299;
+	color:#ffffff;
+	padding: 5px 10px;
+	overflow:auto;
+	margin-top: 30px;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Physics Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="physics.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="physics.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="physics">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_9.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Physics Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+              <form class="questionform" id="q1" data-question="1">
+                <h3>1.Which one of the following is vector quantity?</h3>
+                <ul>
+                  <li><input name="q1" type="radio" value="a">A.Acceleration</li>
+                  <li><input name="q1" type="radio" value="b">B.speed</li>
+                  <li><input name="q1" type="radio" value="c">C.mass </li>
+                  <li><input name="q1" type="radio" value="d">D.distance</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q2" data-question="2">
+                <h3>2.A car travels 4m due North, then 3m east. What is the resultant displacement?</h3>
+                <ul>
+                  <li><input name="q2" type="radio" value="a">A.4m</li>
+                  <li><input name="q2" type="radio" value="b">B.5m</li>
+                  <li><input name="q2" type="radio" value="c">C.-4m </li>
+                  <li><input name="q2" type="radio" value="d">D.-5m</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q3" data-question="3">
+                <h3>3._________ is refers to velocity to instant in time.</h3>
+                <ul>
+                  <li><input name="q3" type="radio" value="a">A.Force </li>
+                  <li><input name="q3" type="radio" value="b">B.speed </li>
+                  <li><input name="q3" type="radio" value="c">C.instantaneous velocity</li>
+                  <li><input name="q3" type="radio" value="d">D.acceleration</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q4" data-question="4">
+                <h3>4.A bus accelerates from 5m/s to 15mm/s in 2sec. what is the average acceleration?</h3>
+                <ul>
+                  <li><input name="q4" type="radio" value="a">A.2m/s^2  </li>
+                  <li><input name="q4" type="radio" value="b">B.3 m/s^2</li>
+                  <li><input name="q4" type="radio" value="c">C.4 m/s^2 </li>
+                  <li><input name="q4" type="radio" value="d">D.5 m/s^2</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q5" data-question="5">
+                <h3>5.The magnitude & direction are equals in the opposite direction, then the resultant vector is_____</h3>
+                <ul>
+                  <li><input name="q5" type="radio" value="a">A.Unit </li>
+                  <li><input name="q5" type="radio" value="b">B.zero </li>
+                  <li><input name="q5" type="radio" value="c">C.opposite</li>
+                  <li><input name="q5" type="radio" value="d">D.equal</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q6" data-question="6">
+                <h3>6.An aircraft decelerates at 5 m/s^2. After 3mins its velocity has dropped 40m/s. what is the initial velocity?  </h3>
+                <ul>
+                  <li><input name="q6" type="radio" value="a">A.400m/s </li>
+                  <li><input name="q6" type="radio" value="b">B.500m/s</li>
+                  <li><input name="q6" type="radio" value="c">C.940m/s</li>
+                  <li><input name="q6" type="radio" value="d">D.900m/s </li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q7" data-question="7">
+                <h3>7.A body moving with a constant velocity.</h3>
+                <ul>
+                  <li><input name="q7" type="radio" value="a">A.Has a positive acceleration </li>
+                  <li><input name="q7" type="radio" value="b">B.Has a negative acceleration</li>
+                  <li><input name="q7" type="radio" value="c">C.Has zero acceleration </li>
+                  <li><input name="q7" type="radio" value="d">D.All</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q8" data-question="8">
+                <h3>8.A resultant & an equilibrant forces have.</h3>
+                <ul>
+                  <li><input name="q8" type="radio" value="a">A.The same magnitude & direction</li>
+                  <li><input name="q8" type="radio" value="b">B.The same magnitude but opposite in direction</li>
+                  <li><input name="q8" type="radio" value="c">C.Different magnitude but the same direction</li>
+                  <li><input name="q8" type="radio" value="d">D.Different magnitude & direction</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q9" data-question="9">
+                <h3>9.________ is the tendency of an object to resists any change of motion.</h3>
+                <ul>
+                  <li><input name="q9" type="radio" value="a">A.Force</li>
+                  <li><input name="q9" type="radio" value="b">B.mass</li>
+                  <li><input name="q9" type="radio" value="c">C.acceleration  </li>
+                  <li><input name="q9" type="radio" value="d">D.momentum</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q10" data-question="10">
+                <h3>10.In physical science a pull & push is ______.</h3>
+                <ul>
+                  <li><input name="q10" type="radio" value="a">A.Mass</li>
+                  <li><input name="q10" type="radio" value="b">B.Velocity</li>
+                  <li><input name="q10" type="radio" value="c">C.force  </li>
+                  <li><input name="q10" type="radio" value="d">D.inertia</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q11" data-question="11">
+                <h3>11.The inertia of an object depends on _________.</h3>
+                <ul>
+                  <li><input name="q11" type="radio" value="a">A.Force</li>
+                  <li><input name="q11" type="radio" value="b">B.mass </li>
+                  <li><input name="q11" type="radio" value="c">C.speed</li>
+                  <li><input name="q11" type="radio" value="d">D.velocity</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q12" data-question="12">
+                <h3>12.The force applied to a spring is directly proportional to its extension this low is ______.</h3>
+                <ul>
+                  <li><input name="q12" type="radio" value="a">A.Newton’s law</li>
+                  <li><input name="q12" type="radio" value="b">B.Hooks law </li>
+                  <li><input name="q12" type="radio" value="c">C.coulombs law  </li>
+                  <li><input name="q12" type="radio" value="d">D.all</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q13" data-question="13">
+                <h3>13.	If you are running at 6m/s and accelerates at 2 m/s^2. How long will it take you to stop?</h3>
+                <ul>
+                  <li><input name="q13" type="radio" value="a">A.2sec </li>
+                  <li><input name="q13" type="radio" value="b">B.3sec </li>
+                  <li><input name="q13" type="radio" value="c">C.6sec</li>
+                  <li><input name="q13" type="radio" value="d">D.7sec</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q14" data-question="14">
+                <h3>14.A train moves uniformly to cover a distance of 24km in 10hr.what is the velocity of the train?</h3>
+                <ul>
+                  <li><input name="q14" type="radio" value="a">A.2.4km/hr</li>
+                  <li><input name="q14" type="radio" value="b">B.-2.4km/hr </li>
+                  <li><input name="q14" type="radio" value="c">C.22km/hr</li>
+                  <li><input name="q14" type="radio" value="d">D.-22km/hr</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q15" data-question="15">
+                <h3>15._________ the increase in length of a spring.</h3>
+                <ul>
+                  <li><input name="q15" type="radio" value="a">A.Load </li>
+                  <li><input name="q15" type="radio" value="b">B.Extension  </li>
+                  <li><input name="q15" type="radio" value="c">C.inertial </li>
+                  <li><input name="q15" type="radio" value="d">D.none</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q16" data-question="16">
+                <h3>16._____ a measure of the stiffness of a spring.</h3>
+                <ul>
+                  <li><input name="q16" type="radio" value="a">A.Spring balance</li>
+                  <li><input name="q16" type="radio" value="b">B.Spring constant</li>
+                  <li><input name="q16" type="radio" value="c">C.Calibrate </li>
+                  <li><input name="q16" type="radio" value="d">D.Elastic deformation</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q17" data-question="17">
+                <h3>17.________ the point up to which a spring will stretch elastically.</h3>
+                <ul>
+                  <li><input name="q17" type="radio" value="a">A.Elastic deformation </li>
+                  <li><input name="q17" type="radio" value="b">B.Elastic limit</li>
+                  <li><input name="q17" type="radio" value="c">C.Plastic deformation</li>
+                  <li><input name="q17" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q18" data-question="18">
+                <h3>18.____ collision between two objects where the total kinetic energy is less after the collision.</h3>
+                <ul>
+                  <li><input name="q18" type="radio" value="a">A.Elastic collision</li>
+                  <li><input name="q18" type="radio" value="b">B.Inelastic collision</li>
+                  <li><input name="q18" type="radio" value="c">C.None </li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q19" data-question="19">
+                <h3>19.A simple machine provides a work output of 120 J for every 480 J of work input. Find efficiency?</h3>
+                <ul>
+                  <li><input name="q19" type="radio" value="a">A.0.22 </li>
+                  <li><input name="q19" type="radio" value="b">B.0.25</li>
+                  <li><input name="q19" type="radio" value="c">C.0.45</li>
+                  <li><input name="q19" type="radio" value="d">D.0.55</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q20" data-question="20">
+                <h3>20.________ a grooved wheel on a movable axle with a rope looped round it.</h3>
+                <ul>
+                  <li><input name="q20" type="radio" value="a">A.Fixed pulley</li>
+                  <li><input name="q20" type="radio" value="b">B.Movable pulley</li>
+                  <li><input name="q20" type="radio" value="c">C.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+
+              <form class="questionform" id="q21" data-question="21">
+                <h3>21.A book rests on a desk. Its covers measures 20 cm by 25 cm. It exerts a pressure of 100 Pa. Determine the mass of the book.</h3>
+                <ul>
+                  <li><input name="q21" type="radio" value="a">A.0.5 kg</li>
+                  <li><input name="q21" type="radio" value="b">B.0.6 kg</li>
+                  <li><input name="q21" type="radio" value="c">C.0.25 kg</li>
+                  <li><input name="q21" type="radio" value="d">D.0.33 kg</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+              <form class="questionform" id="q22" data-question="22">
+                <h3>22.Calculate the increase in length of a 50 cm brass rod that is heated from 25 °C to 70 °C.</h3>
+                <ul>
+                  <li><input name="q22" type="radio" value="a">A.4.3 x 10^(-4) m</li>
+                  <li><input name="q22" type="radio" value="b">B.4.3 x 10^(-5) m</li>
+                  <li><input name="q22" type="radio" value="c">C.4.3 x 10^4 m</li>
+                  <li><input name="q22" type="radio" value="d">D.4.3 x 10^6 m</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+              <form class="questionform" id="q23" data-question="23">
+                <h3>23.______ a type of transverse seismic wave that can only travel through the solid parts of the Earth’s structure.</h3>
+                <ul>
+                  <li><input name="q23" type="radio" value="a">A.P-waves</li>
+                  <li><input name="q23" type="radio" value="b">B.S-waves</li>
+                  <li><input name="q23" type="radio" value="c">C.Triangulation</li>
+                  <li><input name="q23" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+              <form class="questionform" id="q24" data-question="24">
+                <h3>24._____ when two or more waves pass through the same point and combine to either add up or cancel each other out.</h3>
+                <ul>
+                  <li><input name="q24" type="radio" value="a">A.Interference</li>
+                  <li><input name="q24" type="radio" value="b">B.Reflection</li>
+                  <li><input name="q24" type="radio" value="c">C.Refraction</li>
+                  <li><input name="q24" type="radio" value="d">D.Wave fronts</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+              <form class="questionform" id="q25" data-question="25">
+                <h3>25._______ the energy received by each square meter of a surface per second.</h3>
+                <ul>
+                  <li><input name="q25" type="radio" value="a">A.Intensity</li>
+                  <li><input name="q25" type="radio" value="b">B.Reverberation</li>
+                  <li><input name="q25" type="radio" value="c">C.Echo</li>
+                  <li><input name="q25" type="radio" value="d">D.Inverse square</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 25 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

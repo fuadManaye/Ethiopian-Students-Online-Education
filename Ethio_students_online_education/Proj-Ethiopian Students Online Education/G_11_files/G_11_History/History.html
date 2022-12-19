@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>History Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="History.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="History.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="History">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_11.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>History Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+              <form class="questionform" id="q1" data-question="1">
+                <h3>1.Who is the father of History?</h3>
+                <ul>
+                  <li><input name="q1" type="radio" value="a">A.Herodotus </li>
+                  <li><input name="q1" type="radio" value="b">B.Socrates</li>
+                  <li><input name="q1" type="radio" value="c">C.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q2" data-question="2">
+                <h3>2.Human beings belong to the species called ______</h3>
+                <ul>
+                  <li><input name="q2" type="radio" value="a">A.Homo sapiens</li>
+                  <li><input name="q2" type="radio" value="b">B.Homo habilis</li>
+                  <li><input name="q2" type="radio" value="c">C.Home erectus </li>
+                  <li><input name="q2" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q3" data-question="3">
+                <h3>3.From the evolution of human being who is up right walking human being.</h3>
+                <ul>
+                  <li><input name="q3" type="radio" value="a">A.Homo habilis</li>
+                  <li><input name="q3" type="radio" value="b">B.Homo erectus</li>
+                  <li><input name="q3" type="radio" value="c">C.Homo sapiens</li>
+                  <li><input name="q3" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q4" data-question="4">
+                <h3>4.The Hejira was the flight of the prophet Mohammed from Mecca to Medina in _________</h3>
+                <ul>
+                  <li><input name="q4" type="radio" value="a">A.620 AD </li>
+                  <li><input name="q4" type="radio" value="b">B.622 AD </li>
+                  <li><input name="q4" type="radio" value="c">C.626 AD</li>
+                  <li><input name="q4" type="radio" value="d">D.600 AD</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q5" data-question="5">
+                <h3>5.________ is the science in which archaeologists dig out material objects and fossils of the past.</h3>
+                <ul>
+                  <li><input name="q5" type="radio" value="a">A.Archaeology </li>
+                  <li><input name="q5" type="radio" value="b">B.Prehistory</li>
+                  <li><input name="q5" type="radio" value="c">C.History</li>
+                  <li><input name="q5" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q6" data-question="6">
+                <h3>6.Which of the following is Primary sources of history?</h3>
+                <ul>
+                  <li><input name="q6" type="radio" value="a">A.History books</li>
+                  <li><input name="q6" type="radio" value="b">B.Oral tradition</li>
+                  <li><input name="q6" type="radio" value="c">C.Novels </li>
+                  <li><input name="q6" type="radio" value="d">D.Coins </li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 6 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

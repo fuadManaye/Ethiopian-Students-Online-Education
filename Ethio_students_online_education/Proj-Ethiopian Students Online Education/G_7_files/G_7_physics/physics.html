@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Physics Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="physics.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="physics.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="physics">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_7.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Physics Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+              <form class="questionform" id="q1" data-question="1">
+                <h3>1. _________ is a physical quantity which has both magnitude and direction.</h3>
+                <ul>
+                  <li><input name="q1" type="radio" value="a">A.vector quantity</li>
+                  <li><input name="q1" type="radio" value="b">B.scalar quantity</li>
+                  <li><input name="q1" type="radio" value="c">C.none</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q2" data-question="2">
+                <h3>2.which one of the following is vector quantity?</h3>
+                <ul>
+                  <li><input name="q2" type="radio" value="a">A.Displacement </li>
+                  <li><input name="q2" type="radio" value="b">B.volume</li>
+                  <li><input name="q2" type="radio" value="c">C.density</li>
+                  <li><input name="q2" type="radio" value="d">D.temperature</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q3" data-question="3">
+                <h3>3._____________ is the motion of a body along a curved path. </h3>
+                <ul>
+                  <li><input name="q3" type="radio" value="a">A.Rectilinear motion</li>
+                  <li><input name="q3" type="radio" value="b">B.Curvilinear motion</li>
+                  <li><input name="q3" type="radio" value="c">C.Rotary motion</li>
+                  <li><input name="q3" type="radio" value="d">D.Vibratory motion</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q4" data-question="4">
+                <h3>4.A bus is moving in a straight line at a speed of 25m/s. What time does the bus take to cover 5km?</h3>
+                <ul>
+                  <li><input name="q4" type="radio" value="a">A.200sec</li>
+                  <li><input name="q4" type="radio" value="b">B.300sec </li>
+                  <li><input name="q4" type="radio" value="c">C.400sec</li>
+                  <li><input name="q4" type="radio" value="d">D.150sec</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q5" data-question="5">
+                <h3>5.A bus initially at rest accelerated uniformly with an acceleration of 4 m/s^2. What is the speed of the bus at the end of 5?</h3>
+                <ul>
+                  <li><input name="q5" type="radio" value="a">A.25m/s</li>
+                  <li><input name="q5" type="radio" value="b">B.30m/s</li>
+                  <li><input name="q5" type="radio" value="c">C.20m/s</li>
+                  <li><input name="q5" type="radio" value="d">D.12m/s</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q6" data-question="6">
+                <h3>6.________ is the property of a body to retain its state of rest or state of uniform motion in a straight line in the absence of an external force.</h3>
+                <ul>
+                  <li><input name="q6" type="radio" value="a">A.Inertia</li>
+                  <li><input name="q6" type="radio" value="b">B.mass</li>
+                  <li><input name="q6" type="radio" value="c">C.force</li>
+                  <li><input name="q6" type="radio" value="d">D.none</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q7" data-question="7">
+                <h3>7.How high should a body of mass 100 kg be lifted in order to have an energy of 1MJ?</h3>
+                <ul>
+                  <li><input name="q7" type="radio" value="a">A.2000m</li>
+                  <li><input name="q7" type="radio" value="b">B.1000m</li>
+                  <li><input name="q7" type="radio" value="c">C.3000m</li>
+                  <li><input name="q7" type="radio" value="d">D.5000m</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q8" data-question="8">
+                <h3>8.A load of 360N is moved by applying an effort of 60N to a machine, What is the mechanical advantage of the machine?</h3>
+                <ul>
+                  <li><input name="q8" type="radio" value="a">A.5</li>
+                  <li><input name="q8" type="radio" value="b">B.7</li>
+                  <li><input name="q8" type="radio" value="c">C.9</li>
+                  <li><input name="q8" type="radio" value="d">D.6</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q9" data-question="9">
+                <h3>9.__________ is the mechanical advantage that the machine provides in a real situation (with friction).</h3>
+                <ul>
+                  <li><input name="q9" type="radio" value="a">A.Actual Mechanical Advantage</li>
+                  <li><input name="q9" type="radio" value="b">B.Ideal Mechanical Advantage</li>
+                  <li><input name="q9" type="radio" value="c">C.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q10" data-question="10">
+                <h3>10.What is the efficiency of a machine that has an input work of 4200J and produces an output work of 3200J?</h3>
+                <ul>
+                  <li><input name="q10" type="radio" value="a">A.76.2%</li>
+                  <li><input name="q10" type="radio" value="b">B.76.5%</li>
+                  <li><input name="q10" type="radio" value="c">C.30%</li>
+                  <li><input name="q10" type="radio" value="d">D.70%</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q11" data-question="11">
+                <h3>11.____________ is a pulley that does not move together with the load</h3>
+                <ul>
+                  <li><input name="q11" type="radio" value="a">A.Single Fixed pulley</li>
+                  <li><input name="q11" type="radio" value="b">B.Single Movable pulley</li>
+                  <li><input name="q11" type="radio" value="c">C.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q12" data-question="12">
+                <h3>12._______ is the turning effect of a force.</h3>
+                <ul>
+                  <li><input name="q12" type="radio" value="a">A.Torque</li>
+                  <li><input name="q12" type="radio" value="b">B.Pulley</li>
+                  <li><input name="q12" type="radio" value="c">C.Lever </li>
+                  <li><input name="q12" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q13" data-question="13">
+                <h3>13.What will be the temperature reading in Celsius scale when the reading in Fahrenheit scale is zero?</h3>
+                <ul>
+                  <li><input name="q13" type="radio" value="a">A.〖-17.2〗^0 c</li>
+                  <li><input name="q13" type="radio" value="b">B.〖-17.8〗^0 c</li>
+                  <li><input name="q13" type="radio" value="c">C.〖-19.2〗^0 c</li>
+                  <li><input name="q13" type="radio" value="d">D.〖-27.2〗^0 c</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q14" data-question="14">
+                <h3>14.The branch of electricity that studies electric charges at rest is called _____</h3>
+                <ul>
+                  <li><input name="q14" type="radio" value="a">A.Electrostatics</li>
+                  <li><input name="q14" type="radio" value="b">B.Electrified</li>
+                  <li><input name="q14" type="radio" value="c">C.Electric </li>
+                  <li><input name="q14" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q15" data-question="15">
+                <h3>15._________ is the process of removing electric charges from a charged body.</h3>
+                <ul>
+                  <li><input name="q15" type="radio" value="a">A.Discharging a body</li>
+                  <li><input name="q15" type="radio" value="b">B.Charging a body</li>
+                  <li><input name="q15" type="radio" value="c">C.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q16" data-question="16">
+                <h3>16.A charge of 120 C passes through a conductor every 1 minute. What is the charge that flows every second?</h3>
+                <ul>
+                  <li><input name="q16" type="radio" value="a">A.2A</li>
+                  <li><input name="q16" type="radio" value="b">B.3A</li>
+                  <li><input name="q16" type="radio" value="c">C.6A</li>
+                  <li><input name="q16" type="radio" value="d">D.5A</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q17" data-question="17">
+                <h3>17.How much charge flows through a conductor if a current of 1.5A flows for 2 minutes? </h3>
+                <ul>
+                  <li><input name="q17" type="radio" value="a">A.120 C</li>
+                  <li><input name="q17" type="radio" value="b">B.130 C</li>
+                  <li><input name="q17" type="radio" value="c">C.180 C</li>
+                  <li><input name="q17" type="radio" value="d">D.200 C</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q18" data-question="18">
+                <h3>18.__________ is the flow of electrons from the negative terminal to a positive terminal of the source.</h3>
+                <ul>
+                  <li><input name="q18" type="radio" value="a">A.Electric current</li>
+                  <li><input name="q18" type="radio" value="b">B.Electric power </li>
+                  <li><input name="q18" type="radio" value="c">C.Electric city</li>
+                  <li><input name="q18" type="radio" value="d">D.none</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 18 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

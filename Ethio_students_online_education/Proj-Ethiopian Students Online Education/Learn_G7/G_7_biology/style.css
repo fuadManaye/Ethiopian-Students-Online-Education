@@ -1,0 +1,131 @@
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav li{
+	display: inline-block;
+	margin:0 4px;
+	line-height: 20px;
+}
+nav a{
+	color:white;
+	font-size:10px;
+	text-transform: uppercase;
+	border:1px solid transparent;
+	padding:2px 4px;
+	border-radius: 3px;
+}
+nav ul li a{
+	text-decoration: none;
+	color:rgb(3, 241, 103);
+	padding: 5px,20px;
+	border:1px solid transparent;
+	transition: 0.6s ease;
+	font-weight: bold;
+	font-style: oblique;
+}
+nav ul li a:hover{
+	background-color: rgb(212, 100, 100); 
+	color:#000;
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./img/learn.jpg');
+    height:100%;
+    background-position: center;
+    background-size:100%100%;
+    background-attachment: fixed;
+}
+form{
+    text-align:center;
+    margin:80px;                
+}
+#upload{
+    background:#142425;
+    border:2px solid #142425;
+    border-radius:8px;
+}
+#upload:hover{
+    color:yellow;
+}
+button{
+    background:white;
+    border-radius:10px;
+    font-size:12px;
+}
+button:hover{
+    color:blue;
+    background:yellow;
+}
+p{
+    font-size:14px;
+    font-family:Informal Roman;
+    color:#142425;
+    font-weight:bold;
+}
+.logo img{
+    position:fixed;
+    width:160px;
+    left:0%;
+    top:0%;
+    height:100px;
+    border:2px solid rgb(78, 105, 180);
+    border-radius:10px;
+    border-style:none;
+}
+h2{
+    font-size:20px;
+    font-family:Informal Roman;
+    text-align:center;
+}
+@media screen and (max-width:708px) {
+    h2{
+        font-size:18px;
+        font-family:Informal Roman;
+        margin-left:20%;
+    }
+    form{
+        text-align:center;
+        margin:140px;
+    }
+    #upload{
+        background:#142425;
+        border:2px solid #142425;
+        border-radius:8px;
+        margin:10px;
+    }
+    .logo img{
+        position:fixed;
+        width:100px;
+        left:0%;
+        top:0%;
+        height:80px;
+        border:2px solid rgb(78, 105, 180);
+        border-radius:10px;
+        border-style:none;
+    }
+}
+@media screen and (max-width:408px) {
+    h2{
+        font-size:16px;
+        color:green;
+        font-family:Informal Roman;
+        margin-left:36%;
+    }
+    form{
+        text-align:center;
+        margin:140px;   
+        margin-left:10px;
+    }
+    button{
+        background:white;
+        border-radius:5px;
+        font-size:10px;
+    }
+    #upload{
+        background:#142425;
+        border:2px solid #142425;
+        border-radius:6px;
+        margin:10px;
+        font-size:12px;
+    }
+}

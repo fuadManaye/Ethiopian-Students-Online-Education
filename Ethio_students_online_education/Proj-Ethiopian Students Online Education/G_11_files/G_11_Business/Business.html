@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Business Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Business.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="Business.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="Business">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_11.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Business Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+              <form class="questionform" id="q1" data-question="1">
+                <h3>1.Which of the following is Direct Taxes?</h3>
+                <ul>
+                  <li><input name="q1" type="radio" value="a">A.Rental tax </li>
+                  <li><input name="q1" type="radio" value="b">B.VAT</li>
+                  <li><input name="q1" type="radio" value="c">C.Excise Tax</li>
+                  <li><input name="q1" type="radio" value="d">D.Turnover Tax</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q2" data-question="2">
+                <h3>2.Which of the following is Indirect taxes?</h3>
+                <ul>
+                  <li><input name="q2" type="radio" value="a">A.VAT</li>
+                  <li><input name="q2" type="radio" value="b">B.Withholding Tax</li>
+                  <li><input name="q2" type="radio" value="c">C.Business Profit Tax </li>
+                  <li><input name="q2" type="radio" value="d">D.Personal income Tax</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q3" data-question="3">
+                <h3>3.Which of the following is Characteristics of Money?</h3>
+                <ul>
+                  <li><input name="q3" type="radio" value="a">A.Portability</li>
+                  <li><input name="q3" type="radio" value="b">B.Durability</li>
+                  <li><input name="q3" type="radio" value="c">C.Divisibility</li>
+                  <li><input name="q3" type="radio" value="d">D.All</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q4" data-question="4">
+                <h3>4.The relationship between inputs and outputs in the production process is called _________</h3>
+                <ul>
+                  <li><input name="q4" type="radio" value="a">A.Production function </li>
+                  <li><input name="q4" type="radio" value="b">B.Technology</li>
+                  <li><input name="q4" type="radio" value="c">C.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q5" data-question="5">
+                <h3>5._______ also called a lump-sum tax or head tax, collects the same amount of money from each individual regardless of income or circumstances.</h3>
+                <ul>
+                  <li><input name="q5" type="radio" value="a">A.Payroll tax</li>
+                  <li><input name="q5" type="radio" value="b">B.Consumption tax</li>
+                  <li><input name="q5" type="radio" value="c">C.Poll tax</li>
+                  <li><input name="q5" type="radio" value="d">D.Property tax</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 5 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

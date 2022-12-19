@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Economics Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Economics.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="Economics.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="Economics">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_11.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Economics Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+          <form class="questionform" id="q1" data-question="1">
+            <h3>1._____ Deals with aggregates or averages covering an entire economy.</h3>
+            <ul>
+              <li><input name="q1" type="radio" value="a">A.Microeconomics</li>
+              <li><input name="q1" type="radio" value="b">B.Macroeconomics</li>
+              <li><input name="q1" type="radio" value="c">C.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q2" data-question="2">
+            <h3>2.________ All man-made goods that are used for further production of wealth, such as machines, tools, buildings, etc</h3>
+            <ul>
+              <li><input name="q2" type="radio" value="a">A.Labour</li>
+              <li><input name="q2" type="radio" value="b">B.Capital</li>
+              <li><input name="q2" type="radio" value="c">C.Enterpreneure</li>
+              <li><input name="q2" type="radio" value="d">D.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q3" data-question="3">
+            <h3>3.Demand for a commodity increased from 100 units to 120 units as a result of 10% fall in its price. Calculate price elasticity of demand.</h3>
+            <ul>
+              <li><input name="q3" type="radio" value="a">A.2</li>
+              <li><input name="q3" type="radio" value="b">B.1</li>
+              <li><input name="q3" type="radio" value="c">C.4</li>
+              <li><input name="q3" type="radio" value="d">D.5</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q4" data-question="4">
+            <h3>4.If the receipts of the government are more than its expenditure, the government is said to have a ______</h3>
+            <ul>
+              <li><input name="q4" type="radio" value="a">A.Balanced Budget</li>
+              <li><input name="q4" type="radio" value="b">B.Surplus Budget</li>
+              <li><input name="q4" type="radio" value="c">C.Deficit Budget</li>
+              <li><input name="q4" type="radio" value="d">D.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 4 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

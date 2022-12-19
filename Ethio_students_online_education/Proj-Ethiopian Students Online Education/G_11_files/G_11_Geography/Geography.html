@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geography Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Geography.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="Geography.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="Geography">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_11.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Geography Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+              <form class="questionform" id="q1" data-question="1">
+                <h3>1.________ is the study of political organizations and institutions, especially governments.</h3>
+                <ul>
+                  <li><input name="q1" type="radio" value="a">A.Political Science </li>
+                  <li><input name="q1" type="radio" value="b">B.Economics</li>
+                  <li><input name="q1" type="radio" value="c">C.History</li>
+                  <li><input name="q1" type="radio" value="d">D.Demography</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q2" data-question="2">
+                <h3>2.___________ are short, broken lines that are used to show relief.</h3>
+                <ul>
+                  <li><input name="q2" type="radio" value="a">A.Form lines</li>
+                  <li><input name="q2" type="radio" value="b">B.Counter lines</li>
+                  <li><input name="q2" type="radio" value="c">C.Hachures </li>
+                  <li><input name="q2" type="radio" value="d">D.Shaded Relief</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q3" data-question="3">
+                <h3>3.__________ represents an imaginary line on the ground, representing altitude above or below mean sea level.</h3>
+                <ul>
+                  <li><input name="q3" type="radio" value="a">A.Form Lines</li>
+                  <li><input name="q3" type="radio" value="b">B.Counter Lines</li>
+                  <li><input name="q3" type="radio" value="c">C.Hachures</li>
+                  <li><input name="q3" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q4" data-question="4">
+                <h3>4.__________ contour lines resemble dashed or broken lines.</h3>
+                <ul>
+                  <li><input name="q4" type="radio" value="a">A.Index </li>
+                  <li><input name="q4" type="radio" value="b">B.Intermediate </li>
+                  <li><input name="q4" type="radio" value="c">C.Supplementary</li>
+                  <li><input name="q4" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q5" data-question="5">
+                <h3>5.__________ is a dip or low point between two areas of higher ground.</h3>
+                <ul>
+                  <li><input name="q5" type="radio" value="a">A.Saddle </li>
+                  <li><input name="q5" type="radio" value="b">B.Valley</li>
+                  <li><input name="q5" type="radio" value="c">C.Ridge</li>
+                  <li><input name="q5" type="radio" value="d">D.Depression</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q6" data-question="6">
+                <h3>6._______ is a short and continuously sloping line of higher ground that normally extends out from the side of a ridge.</h3>
+                <ul>
+                  <li><input name="q6" type="radio" value="a">A.Spur</li>
+                  <li><input name="q6" type="radio" value="b">B.Cliff</li>
+                  <li><input name="q6" type="radio" value="c">C.Ridge </li>
+                  <li><input name="q6" type="radio" value="d">D.None </li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q7" data-question="7">
+                <h3>7.which kind of delta has a convex outward margin?</h3>
+                <ul>
+                  <li><input name="q7" type="radio" value="a">A.Arcuate </li>
+                  <li><input name="q7" type="radio" value="b">B.Bird’s foot</li>
+                  <li><input name="q7" type="radio" value="c">C.Cuspate</li>
+                  <li><input name="q7" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q8" data-question="8">
+                <h3>8._________ is planting trees in areas where the original forest cover has been removed.</h3>
+                <ul>
+                  <li><input name="q8" type="radio" value="a">A.Afforestation</li>
+                  <li><input name="q8" type="radio" value="b">B.Reforestation</li>
+                  <li><input name="q8" type="radio" value="c">C.Agroforestry</li>
+                  <li><input name="q8" type="radio" value="d">D.Social forestry</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 8 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

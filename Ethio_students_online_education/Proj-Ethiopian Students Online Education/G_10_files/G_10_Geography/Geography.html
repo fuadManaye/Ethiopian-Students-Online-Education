@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geography Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Geography.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="Geography.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="Geography">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_10.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Geography Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+              <form class="questionform" id="q1" data-question="1">
+                <h3>1._______ It is a method of showing relief by using colors.</h3>
+                <ul>
+                  <li><input name="q1" type="radio" value="a">A.Form lines </li>
+                  <li><input name="q1" type="radio" value="b">B.Layer tinting</li>
+                  <li><input name="q1" type="radio" value="c">C.Hachures</li>
+                  <li><input name="q1" type="radio" value="d">D.Isohypses</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q2" data-question="2">
+                <h3>2.________ slope, the contour lines are close together at the base and widely spaced at the top.</h3>
+                <ul>
+                  <li><input name="q2" type="radio" value="a">A.Convex </li>
+                  <li><input name="q2" type="radio" value="b">B.Concave</li>
+                  <li><input name="q2" type="radio" value="c">C.Even </li>
+                  <li><input name="q2" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q3" data-question="3">
+                <h3>3.___________ has a constant gradient from the bottom to the top.</h3>
+                <ul>
+                  <li><input name="q3" type="radio" value="a">A.Concave slope</li>
+                  <li><input name="q3" type="radio" value="b">B.Convex slope</li>
+                  <li><input name="q3" type="radio" value="c">C.Even slope</li>
+                  <li><input name="q3" type="radio" value="d">D.Terraced slope</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q4" data-question="4">
+                <h3>4.____________ They have extremely cold winters and summers.</h3>
+                <ul>
+                  <li><input name="q4" type="radio" value="a">A.Polar climate </li>
+                  <li><input name="q4" type="radio" value="b">B.Highland climate </li>
+                  <li><input name="q4" type="radio" value="c">C.Dry climate</li>
+                  <li><input name="q4" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q5" data-question="5">
+                <h3>5.If the number of live births in a population of 70,686,000 was 270,300, find the crude birth rate?</h3>
+                <ul>
+                  <li><input name="q5" type="radio" value="a">A.3.8</li>
+                  <li><input name="q5" type="radio" value="b">B.2.5</li>
+                  <li><input name="q5" type="radio" value="c">C.5.9</li>
+                  <li><input name="q5" type="radio" value="d">D.4.5</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q6" data-question="6">
+                <h3>6.Say total students of a given school was 5000. Out of this 3000 were females. What was sex-ratio of student population?</h3>
+                <ul>
+                  <li><input name="q6" type="radio" value="a">A.66.7 m/100 f</li>
+                  <li><input name="q6" type="radio" value="b">B.65 m/100 f</li>
+                  <li><input name="q6" type="radio" value="c">C.43 m/100 f</li>
+                  <li><input name="q6" type="radio" value="d">D.30 m/100 f </li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 6 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

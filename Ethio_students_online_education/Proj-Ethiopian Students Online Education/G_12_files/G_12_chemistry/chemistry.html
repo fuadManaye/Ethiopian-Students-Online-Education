@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chemistry Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="chemistry.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="chemistry.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="chemistry">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html">Learn</a></li> 
+              <li><a href="../G_12.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Chemistry Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+          <form class="questionform" id="q1" data-question="1">
+            <h3>1.The partial pressure of carbon dioxide gas inside a bottle of mineral water is 4 atm at 25°C. What is the solubility of CO_2?</h3>
+            <ul>
+              <li><input name="q1" type="radio" value="a">A.0.1 mol/L</li>
+              <li><input name="q1" type="radio" value="b">B.0.3 mol/L</li>
+              <li><input name="q1" type="radio" value="c">C.0.6 mol/L</li>
+              <li><input name="q1" type="radio" value="d">D.0.9 mol/L</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q2" data-question="2">
+            <h3>2.A solution is made by dissolving 13.5 g of glucose, C_6 H_12 O_6, in 0.100 kg of water. What is the mass percentage of solute in this solution?</h3>
+            <ul>
+              <li><input name="q2" type="radio" value="a">A.12.9 %</li>
+              <li><input name="q2" type="radio" value="b">B.11.9 %</li>
+              <li><input name="q2" type="radio" value="c">C.13 %</li>
+              <li><input name="q2" type="radio" value="d">D.12.1 %</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q3" data-question="3">
+            <h3>3.What is the mole fraction of I_2 in a solution containing 30 g of I_2  in 400 g of C〖Cl〗_4?</h3>
+            <ul>
+              <li><input name="q3" type="radio" value="a">A.0.88</li>
+              <li><input name="q3" type="radio" value="b">B.0.044</li>
+              <li><input name="q3" type="radio" value="c">C.0.04</li>
+              <li><input name="q3" type="radio" value="d">D.0.66</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q4" data-question="4">
+            <h3>4.What is the molar concentration of a solution containing 16.0 g of 〖CH〗_3 OH in 200 mL of solution?</h3>
+            <ul>
+              <li><input name="q4" type="radio" value="a">A.2.77 M</li>
+              <li><input name="q4" type="radio" value="b">B.2.50 M</li>
+              <li><input name="q4" type="radio" value="c">C.2.44 M</li>
+              <li><input name="q4" type="radio" value="d">D.3.44 M</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+
+          <form class="questionform" id="q5" data-question="5">
+            <h3>5._________ is the second most abundant element, after oxygen, in the Earth's crust.</h3>
+            <ul>
+              <li><input name="q5" type="radio" value="a">A.Silicon</li>
+              <li><input name="q5" type="radio" value="b">B.Carbon</li>
+              <li><input name="q5" type="radio" value="c">C.Calcium</li>
+              <li><input name="q5" type="radio" value="d">D.None</li>
+            </ul>
+            <button id="submit" class="correct">Submit</button>
+          </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 5 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

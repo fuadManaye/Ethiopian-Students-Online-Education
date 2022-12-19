@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drawing Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Drawing.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="Drawing.js"></script>
+  </head>
+  <body>
+      <section>
+        <div class="Drawing">
+          <nav>
+            <ul>
+              <li><a href="../../learn.html" >Learn</a></li> 
+              <li><a href="../G_12.html">Main Page</a></li> 
+            </ul>
+          </nav>
+          <div class="touch">
+            <h1>Drawing Quiz</h1>
+            <h2>Answer the questions by tapping the boxes<span></span></h2>
+          </div>
+        <div class="section">
+          <div class="container">
+            <header>
+              <div class="center">Good Luck</div>
+            </header>
+            <main>
+              <form class="questionform" id="q1" data-question="1">
+                <h3>1._________ are thin lines composed of long dashes alternating with pairs of short dashes.</h3>
+                <ul>
+                  <li><input name="q1" type="radio" value="a">A.Phantom lines </li>
+                  <li><input name="q1" type="radio" value="b">B.Break lines</li>
+                  <li><input name="q1" type="radio" value="c">C.Section lines</li>
+                  <li><input name="q1" type="radio" value="d">D.Dimension lines</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q2" data-question="2">
+                <h3>2.____ are thin lines. It is used to show round parts that are broken in half to better clarify the print or to reduce the length of the object.</h3>
+                <ul>
+                  <li><input name="q2" type="radio" value="a">A.Short Break Lines</li>
+                  <li><input name="q2" type="radio" value="b">B.Cylindrical Break Lines</li>
+                  <li><input name="q2" type="radio" value="c">C.Long Break Lines </li>
+                  <li><input name="q2" type="radio" value="d">D.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q3" data-question="3">
+                <h3>3._____ is a perspective view obtained by placing horizon line below ground line.</h3>
+                <ul>
+                  <li><input name="q3" type="radio" value="a">A.Ground view</li>
+                  <li><input name="q3" type="radio" value="b">B.Bird’s eye view</li>
+                  <li><input name="q3" type="radio" value="c">C.Worm’s eye view</li>
+                  <li><input name="q3" type="radio" value="d">D.Human’s eye view</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q4" data-question="4">
+                <h3>4.______are dark, heavy solid lines used to show the outline and shape of an object and define features you can see in a particular view.</h3>
+                <ul>
+                  <li><input name="q4" type="radio" value="a">A.Object lines </li>
+                  <li><input name="q4" type="radio" value="b">B.Hidden lines </li>
+                  <li><input name="q4" type="radio" value="c">C.Center lines</li>
+                  <li><input name="q4" type="radio" value="d">D.Dimension lines</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q5" data-question="5">
+                <h3>5.______ are thin solid lines used to show the starting and stopping points of a dimension.</h3>
+                <ul>
+                  <li><input name="q5" type="radio" value="a">A.Hidden lines </li>
+                  <li><input name="q5" type="radio" value="b">B.Center lines</li>
+                  <li><input name="q5" type="radio" value="c">C.Dimension lines</li>
+                  <li><input name="q5" type="radio" value="d">D.Extension lines</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+    
+              <form class="questionform" id="q6" data-question="6">
+                <h3>6.______is a large main supporting beam, commonly of steel or reinforced concrete that carries a heavy transverse (crosswise) load.</h3>
+                <ul>
+                  <li><input name="q6" type="radio" value="a">A.Column</li>
+                  <li><input name="q6" type="radio" value="b">B.Girder</li>
+                  <li><input name="q6" type="radio" value="c">C.None</li>
+                </ul>
+                <button id="submit" class="correct">Submit</button>
+              </form>
+          <div id="results"></div><br>
+          <div id="answers"></div>
+          <br>
+        </main>
+        <footer class="foot">
+          <div class="pull-left">Total: 6 Questions</div>
+          <div class="pull-right" id="clock">10:10:01</div>
+          <script type="text/javascript">
+          setInterval(displayclock,500);
+          function displayclock(){
+            var time=new Date();
+            var hrs=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var en='AM';
+            if(hrs > 12){
+              hrs=hrs - 12;
+            }
+            if(hrs==0){
+              hrs = 12;
+            }
+            if(hrs< 10){
+              hrs= '0' + hrs;
+            }
+            if(min< 10){
+              min= '0' + min;
+            }
+            if(sec< 10){
+              sec= '0' + sec;
+            }
+            document.getElementById('clock').innerHTML=hrs + ':' + min + ':' + sec + ' ' + en;
+          }
+          </script>
+        </footer>
+      </div>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

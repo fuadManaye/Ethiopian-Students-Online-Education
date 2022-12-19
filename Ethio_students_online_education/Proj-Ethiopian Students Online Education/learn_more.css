@@ -1,0 +1,164 @@
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-family: montserrat;
+}
+.back{
+    background-image: url(./img/learn_more.jpeg);
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	height: 60px;
+	width: 100%;
+	background: #141d28;
+}
+.logo{
+    color:#e9e9e9;
+    font-size:16px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 10px;
+}
+.logo span{
+    color:rgb(11, 201, 74);
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav li{
+	display: inline-block;
+	margin:0 6px;
+	line-height: 5px;
+}
+nav a{
+	color:white;
+	font-size:10px;
+	text-transform: uppercase;
+	border:1px solid transparent;
+	padding:1px 2px;
+	border-radius: 3px;
+    font-weight: bold;
+}
+nav ul li a{
+	text-decoration: none;
+	color:rgb(221, 214, 214);
+	padding: 5px,20px;
+	transition: 0.6s ease;
+}
+nav ul li a:hover{
+    background-color: rgb(212, 100, 100); 
+    color:#000;
+}
+nav #icon{
+	color:white;
+	font-size:30px;
+	line-height: 10px;
+	float:right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+@media (max-width:1125px) {
+	.back{
+        height:100vh;
+    }
+	nav #icon{
+		display: block;
+		color:white;
+		font-size:15px;
+		line-height: 5px;
+		float:right;
+		margin-right: 20px;
+	}
+	nav ul{
+		position: fixed;
+		width:100%;
+		height:100vh;
+		background:#2f3640;
+		top:50px;
+		left:-100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav a{
+		font-size: 10px;
+	}
+	nav li{
+		display: block;
+		margin:10px 0;
+		line-height: 20px;
+	}
+	a.active,a:hover{
+		color:#3498db;
+	}
+	nav ul.show{
+		left:0;
+	}
+    .logo{
+        text-align: center;
+    }
+    nav{
+        height: 50px;
+    }
+}
+@media (max-width:600px) {
+    .back{
+        height:100vh;
+    }
+	nav #icon{
+		display: block;
+		color:white;
+		font-size:15px;
+		line-height: 5px;
+		float:right;
+		margin-right: 20px;
+	}
+	nav ul{
+		position: fixed;
+		width:100%;
+		height:100vh;
+		background:#2f3640;
+		top:50px;
+		left:-100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav a{
+		font-size: 10px;
+	}
+	nav li{
+		display: block;
+		/* margin:10px 0; */
+		line-height: 10px;
+	}
+	a.active,a:hover{
+		color:#3498db;
+	}
+	nav ul.show{
+		left:0;
+	}
+    .logo{
+        text-align: center;
+    }
+    nav{
+        height: 50px;
+    }
+	.back img{ 
+		float: right;
+	}
+}
+.back img{ 
+    float: right;
+	width:50px;
+	height:14px;
+	border:2px solid rgb(78, 105, 180);
+    border-radius: 7px;
+    margin-top: 360px;
+}
